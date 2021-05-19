@@ -4,6 +4,7 @@
   "description": "Keep your nvmrc file upto date with your package json node engine",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "npm test"
   },
   "author": "Reece Daniels",
