@@ -11,7 +11,9 @@ try {
     throw new Error(NO_PACKAGE_JSON_ENGINE_ERROR_MESSAGE)
   }
 
+  console.info('Generating .nvmrc from package.json...')
   fs.writeFileSync(`${__dirname}/.nvmrc`, `${parsedPackageJSON.engines.node}\n`, { encoding: "utf-8" })
+  console.info('Generated .nvmrc from package.json')
 } catch (e) {
   if (e.code === 'ENOENT' && e.errno === -2) {
     console.log('Could not create .nvmrc file. Could not find project package.json')
