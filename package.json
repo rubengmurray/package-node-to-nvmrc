@@ -1,6 +1,6 @@
 {
   "name": "package-node-to-nvmrc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Keep your .nvmrc file upto date with your package.json node engine",
   "main": "./index.js",
   "bin": {
