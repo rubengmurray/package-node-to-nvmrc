@@ -5,7 +5,7 @@ const NO_PACKAGE_JSON_ENGINE_ERROR_MESSAGE = 'Could not create .nvmrc file. A No
 module.exports = {
   run() {
     try {
-      console.info('Checking .nvmrc is upto date with the package.json specified node engine...')
+      console.info('Matching nvmrc version to package.json...')
       // Check package.json
       const packageJSONAsBuffer = fs.readFileSync(`${process.cwd()}/package.json`)
       const packageJSONAsString = packageJSONAsBuffer.toString()
