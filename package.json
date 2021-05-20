@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "Keep your .nvmrc file upto date with your package.json node engine",
   "main": "./index.js",
+  "bin": {
+    "package-node-to-nvmrc": "bin/create.js"
+  },
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./bin/create.js",
     "test": "npm test"
   },
   "author": "Reece Daniels <https://github.com/rubengmurray>",
